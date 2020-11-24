@@ -1,6 +1,6 @@
 package sesion001.ejemplopaquete;
 
-public class AutoFamiliar extends Auto {
+public class AutoFamiliar extends Auto implements TransporteDeMotor {
 	
 	private int numeroAsientos;
 
@@ -14,9 +14,15 @@ public class AutoFamiliar extends Auto {
 	public int getNumeroAsientos() {
 		return numeroAsientos;
 	}
+
 	
 
 	
+
+	public void otroMetodo() {
+		System.out.println("Otro método");
+	}
+
 	public void acelerar() {
 		int nuevaVelocidad = velocidad + 5;
 

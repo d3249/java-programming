@@ -1,6 +1,6 @@
 package sesion001.ejemplopaquete;
 
-public  class Auto {
+public class Auto implements Vehiculo {
 
 	private String marca;
 	protected int velocidad;
@@ -12,6 +12,9 @@ public  class Auto {
 		this.velocidad = 0;
 	}
 
+	
+	
+	
 	public Auto(String str, int entero) {
 
 		if (str == null) {
@@ -26,7 +29,15 @@ public  class Auto {
 		this.velocidadMaxima = entero;
 		this.velocidad = 0;
 	}
+	
+	public void abordar() {
+		System.out.println("Abordaste");
+	}
+	
+	
+	
 
+	@Override
 	public void acelerar() {
 		int nuevaVelocidad = velocidad + 10;
 
@@ -35,6 +46,10 @@ public  class Auto {
 		}
 
 		velocidad = nuevaVelocidad;
+	}
+	
+	public void avanzar() {
+		System.out.println("Está avanzando");
 	}
 
 	public void frenar() {
