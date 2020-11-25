@@ -14,6 +14,8 @@ public class INterfacesDriver {
 		
 		misVehiculos.add(miBici);
 		misVehiculos.add(miAuto);
+		misVehiculos.add(new Bicicleta());
+		misVehiculos.add(new Bicicleta());
 		
 		//Recupero la bicicleta
 		Vehiculo vehiculoRecuperado = misVehiculos.get(0);
@@ -23,14 +25,28 @@ public class INterfacesDriver {
 		
 		
 		if(vehiculoRecuperado instanceof Auto) {
-			Auto xxxx = (Auto) vehiculoRecuperado;
-			
-			xxxx.getMarca();
+			Auto elAuto = (Auto) vehiculoRecuperado;
+			elAuto.getMarca();
 		} else if(vehiculoRecuperado instanceof Bicicleta) {
-			
-			Bicicleta xxxx = (Bicicleta) vehiculoRecuperado;
-			
-			xxxx.pedalear();
+			Bicicleta laBici = (Bicicleta) vehiculoRecuperado;
+			laBici.pedalear();
 		}
+		
+		int contAutos = 0;
+		int contBicicletas = 0;
+		
+		for(Vehiculo v : misVehiculos) {
+			if(v instanceof Auto) {
+				contAutos++;
+			}
+			
+			if(v instanceof Bicicleta) {
+				contBicicletas++;
+			}
+		}
+		
+		System.out.println("Hay " + contAutos + " autos y " + contBicicletas + " bicicletas");
+		
+		
 	}
 }

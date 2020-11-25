@@ -1,9 +1,9 @@
-package sesion001.ejemplopaquete.abstractos;
+package sesion001.abstractos;
 
 public abstract class Pastel {
 	
 
-	public void preparar() {
+	public void hornear() {
 
 		System.out.println("Preparar la harina");
 		System.out.println("Agregar huevos");

@@ -1,4 +1,4 @@
-package sesion001.ejemplopaquete.abstractos;
+package sesion001.abstractos;
 
 public class PasteleriaDriver {
 	
@@ -7,7 +7,7 @@ public class PasteleriaDriver {
 	
 		for(Pastel p : pasteles) {
 			System.out.println("Preparando pastel...");
-			p.preparar();
+			p.hornear();
 		}
 		
 	}

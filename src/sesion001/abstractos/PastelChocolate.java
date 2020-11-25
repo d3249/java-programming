@@ -1,6 +1,6 @@
-package sesion001.ejemplopaquete.abstractos;
+package sesion001.abstractos;
 
-public class PastelChocolate extends Pastel {
+public  class PastelChocolate extends Pastel {
 
 	@Override
 	protected String ingredienteSecreto() {

@@ -1,4 +1,4 @@
-package sesion001.ejemplopaquete.abstractos;
+package sesion001.abstractos;
 
 public class PastelVainilla extends Pastel {
 
