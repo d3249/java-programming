@@ -11,6 +11,10 @@ public class Fraccion {
 				throw new DivisionPorCeroException("El denominador no puede ser cero");
 			}
 			
+//			assert denominador != 0 : "El deniminador no puede ser cero";
+			// El argumento para la máquina virtual debe ser -ea
+			
+			
 			this.numerador = numerador;
 			this.denominador = denominador;
 		}
