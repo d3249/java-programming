@@ -58,6 +58,5 @@ public class SortDriver {
 		for (Desplazamiento numero : Ordenador.burbuja(desplazamientos)) {
 			System.out.println(numero);
 		}
-		
 	}
 }

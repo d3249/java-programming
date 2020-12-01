@@ -1,6 +1,6 @@
 package genericos;
 
-public class Caja <T extends Number, U> {
+public class Caja<T> {
 
 	private T contenido;
 
@@ -15,10 +15,6 @@ public class Caja <T extends Number, U> {
 	public void setContenido(T contenido) {
 		this.contenido = contenido;
 	}
-	
 
-	public U castear() {
-		return (U) contenido;
-	}
 	
 }
