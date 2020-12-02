@@ -33,10 +33,7 @@ public class OtroSort {
 		List<T> listaFinal = menoresOrdenados;
 		
 		listaFinal.add(elementoMedio);
-
-		for (T elemento : mayoresOrdenados) {
-			listaFinal.add(elemento);
-		}
+		listaFinal.addAll(mayoresOrdenados);
 
 		return listaFinal;
 
